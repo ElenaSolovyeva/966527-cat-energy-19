@@ -6,12 +6,15 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-wrapper">
-        <img class="logo" src="" width="33" height="38" alt="Логотип cat energy">
-        <div class="header-title"><span>CAT</span> ENERGY</div>
+
+    <header class="header">
+      <div class="header__wrapper">
+        <img class="header__logo" src="" width="33" height="38" alt="Логотип cat energy">
+        <div class="header__title"><span>CAT</span> ENERGY</div>
         <button class="menu__button burger-button" aria-label="Меню"></button>
       </div>
+
+
       <nav>
         <ul>
           <li>
@@ -25,18 +28,83 @@
           </li>
         </ul>
       </nav>
+
+
     </header>
 
-    <main></main>
+    <main>
+      <section class="form-hader">
+        <h1 class="form-hader__title title-h1">Подбор программы</h1>
+        <p class="form-header__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      </section>
 
-    <footer>
-      <div class="footer-logo"></div>
+      <form class="query-form" name="query-form" action="" >
+        <fieldset class="query-form__fieldset fieldset-features">
+          <label class="query-form__label" for="name">Имя:*</label>
+          <input class="query-form__input" name="name" id="name" type="text" placeholder="Барсик">
+          <label for="weight" class="query-form__label">Вес (кг):*</label>
+          <input class="query-form__input" name="weight" id="weight" type="text" placeholder="7">
+          <label for="age" class="query-form__label">Возраст (лет):</label>
+          <input class="query-form__input" name="age" id="age" type="text" placeholder="7">
+        </fieldset>
+        <fieldset class="query-form__fieldset fieldset-programm">
+          <input class="query-form__input" name="programm" id="slim" type="radio" selected>
+          <label class="query-form__label" for="slim">Похудение</label>
+          <input class="query-form__input" name="programm" id="pro" type="radio">
+          <label class="query-form__label" for="pro">Набор массы</label>
+          <input class="query-form__input" name="programm" id="unknown" type="radio">
+          <label class="query-form__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="query-form__fieldset fieldset-contacts">
+          <legend class="query-form__legend legend-deco">Контактные данные (владельца кота)</legend>
+          <label class="query-form__label" for="email">E-Mail:*</label>
+          <input class="query-form__input" name="email" id="email" type="email" placeholder="kuklachev@gmail.com">
+          <label class="query-form__label" for="tel"Телефон:*</label>
+          <input class="query-form__input" name="tel" id="tel" type="tel" pattern="+7 \([0-9]{3}\) [0-9]{3} [0-9]2 [09]2" placeholder="kuklachev@gmail.com">
+        </fieldset>
+        <fieldset class="query-form__fieldset fieldset-comment">
+          <legend class="query-form__legend legend-comment">Комментарий</legend>
+          <textarea class="query-form__comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="query-form__fieldset fieldset-optionally">
+          <legend class="query-form__legend legend-optionally">Дополнительно</legend>
+          <input class="query-form__input" name="optionally" id="sweetener" type="checkbox" value="shugar" selected>
+          <label for="shugar">Сахарозаменитель</label>
+          <input class="query-form__input" name="optionally" id="water" type="checkbox" value="water" selected>
+          <label for="water">Питьевая вода</label>
+          <input class="query-form__input" name="optionally" id="milk" type="checkbox" value="milk" selected>
+          <label for="milk">Молоко</label>
+          <input class="query-form__input" name="optionally" id="vitamins" type="checkbox" value="vitamins" selected>
+          <label for="vitamins">Витамины</label>
+        </fieldset>
+        <div class="send">
+          <p class="send__text">* — Обязательные поля</p>
+          <button class="send__button button" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+
+      <section class="contacts contacts--grey">
+        <p class="contacts-inviting title-h4">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+
+      <section class="map">
+        <pictire class="map-image" src="" alt="Схема проезда"></picture>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo"></div>
+
 
       <div class="social"></div>
 
       <div class="developer">
-        <a class="developer-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="developer-link" href="https://htmlacademy.ru/intensive/adaptive" ></a>
+
+        <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+
       </div>
     </footer>
 
