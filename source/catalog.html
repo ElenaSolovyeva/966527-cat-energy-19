@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <img class="header__logo" src="" width="33" height="38" alt="Логотип cat energy">
+        <div class="header__title"><span>CAT</span> ENERGY</div>
+        <button class="menu__button burger-button" aria-label="Меню"></button>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Гавная</a> <!--?-->
+          </li>
+          <li>
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li>
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="main-header-title title-h1">Каталог продукции</h1>
+
+      <section class="catalog">
+        <article class="product">
+
+          <div class="product__info">
+
+            <a href="" class="product__link"> <!-- картинка -->
+              <picture class="product__image"></picture>
+            </a>
+
+            <div class="product__description"> <!-- заголовок + описание -->
+
+              <a href=""> <!-- в т.ч. заголовок -->
+                <h2 class="product__name">
+                  <span>Cat Energy</span>
+                  <span>PRO 1000 г</span>
+                </h2>
+              </a>
+
+              <table class="product__features"> <!-- в т.ч. описание (таблица) -->
+                <tr class="visually-hidden">
+                    <th class="visually-hidden">Характеристики</th>
+                    <th class="visually-hidden">Значения</th>
+                </tr>
+                <tr>
+                  <td class="product__text"></td>
+                  <td class="product__text"></td>
+                </tr>
+                <tr>
+                  <td class="product__text"></td>
+                  <td class="product__text"></td>
+                </tr>
+                <tr>
+                  <td class="product__text"></td>
+                  <td class="product__text"></td>
+                </tr>
+              </table>
+            </div> <!-- Конец таблицы class="product-description": заголовок + описание -->
+
+          </div> <!-- Конец каласса class="product-info": картинка + заголовок + описание -->
+
+          <!-- Кнопка «Заказать» вызывает появление модального окна для оформления заказа. Модальное окно оформления заказа реализовывать не нужно.
+          При отключенном JS должен осуществляться переход на страницу оформления заказа (страницу оформления заказа реализовывать не нужно). -->
+          <a href="" class="product__order-button button">Заказать</a>
+        </article>
+
+        <!-- Еще 6 аналогичных карточек -->
+      </section>
+
+      <section class="show-more">
+        <h2 class="visually-hidden">Полный каталог товаров</h2>
+        <p class="show-more__title title-h2">Показать еще <span>100500</span> товаров</p>
+        <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+        <a href="" class="show-more__button button button--pale">Показать все</a> <!--pale == бледный -->
+      </section>
+
+      <section class="additional-products">
+
+        <article class="additional-product">
+          <h2 class="additional-product__title">Сахарозаменитель</h2>
+
+          <div class="additional-product__description">
+            <p class="additional-product__text first-element">1 упаковка (100 г)</p>
+            <p class="additional-product__text second-element">200 Р.</p>
+          </div>
+
+          <a class="additional-product__order-button button" href="#">Заказать</a>
+        </article>
+
+        <!-- еще 3 карточки дополнительных товаров -->
+      </section>
+
+      <section class="gift">  <!-- Фоновую картинку сделаю как background-image -->
+        <h2 class="visually-hidden">Подарок покупателю</h2>
+        <p class="gift__text">Закажите все  и получите чехол для кота в подарок!</p>
+      </section>
+
+      <section class="contacts">
+        <p class="contacts__inviting title-h4">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+
+      <section class="map"><!-- Не назвать ли класс "catalog-map"? -->
+        <pictire class="map__image" src="" alt="Схема проезда"></picture>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo"></div>
+
+      <div class="social"></div>
+
+      <div class="developer">
+        <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </footer>
+
+  </body>
+</html>
