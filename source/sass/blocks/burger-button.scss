@@ -1,0 +1,11 @@
+.burger-button {
+  @include button;
+
+  width: 24px;
+  height: 18px;
+
+  background-color: transparent;
+  background-size: cover;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+}

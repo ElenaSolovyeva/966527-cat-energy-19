@@ -1,0 +1,24 @@
+.example {
+  position: relative;
+
+  margin: 0 auto 0 auto;
+  padding-left: $mobile-indent;
+  padding-right: $mobile-indent;
+
+  background-color: $fill-leight;
+  border: 1px solid tomato;
+}
+
+.example__title {
+  margin-bottom: 20px;
+  color: $header-color;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__text {
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}

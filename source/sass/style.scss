@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "OswaldMedium";
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OswaldRegular";
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+}
+
+//@import "../sass/normalize.scss";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+// чтобы при width: 100%; не вываливались из блока padding'и margin'ы
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+
+  @include text();
+  background-repeat: no-repeat;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap; /* Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой;*/
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.reset-list {
+  position: relative;
+
+  list-style: none;
+  padding: 0;
+}
+
+@import "../sass/blocks/burger-button.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/description.scss";
+@import "../sass/blocks/example.scss";
+@import "../sass/blocks/intro.scss";
+@import "../sass/blocks/main-header.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/results.scss";

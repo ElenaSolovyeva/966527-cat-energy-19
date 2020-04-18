@@ -1,0 +1,124 @@
+
+.intro {
+  position: relative;
+  max-width: $tablet-width;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.intro__article {
+  min-height: 266px;
+  margin-right: $mobile-indent;
+  margin-left: $mobile-indent;
+  background-color: $fill-leight;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.intro__title {
+  position: relative;
+
+  padding-top: 40px;
+  padding-left: 90px;
+  margin-bottom: 35px;
+
+  color: $header-color;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $fill-color;
+    border: 1px solid $fill-color;
+    border-radius: 50%;
+  }
+}
+
+.intro__title--slim {
+  position: relative;
+
+  &::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    left: 30px;
+    top: 22px;
+
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.intro__title--pro {
+  position: relative;
+
+  &::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    left: 13px;
+    top: 39px;
+
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.intro__description {
+  padding-left: $mobile-indent;
+  padding-right: 35px;
+  margin-bottom: 25px;
+
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;;
+  line-height: 18px;
+}
+
+.intro__link {
+  position: relative;
+  display: block;
+
+  padding-top: 20px;
+  padding-bottom: 22px;
+  margin-left: $mobile-indent;
+  margin-right: $mobile-indent;
+
+  color: $header-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  border-top: 1px solid $border-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 117px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
