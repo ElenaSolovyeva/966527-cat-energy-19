@@ -1,6 +1,6 @@
 .description {
   position: relative;
-  max-width: $tablet-width;
+  width: $mobile-width;
   padding-left: $mobile-indent;
   padding-right: $mobile-indent;
   margin-right: auto;
@@ -10,8 +10,10 @@
 }
 
 .description__title {
+  margin-top: 0;
   margin-bottom: 20px;
   color: $header-color;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
 }
@@ -20,7 +22,7 @@
   margin-bottom: 0;
 }
 
-.decription__item{
+.decription__item {
   position: relative;
   min-height: 60px;
   padding-top: 5px;
@@ -99,6 +101,7 @@
     background-size: cover;
   }
 }
+
 .decription__item--clock {
   position: relative;
   z-index: 2;

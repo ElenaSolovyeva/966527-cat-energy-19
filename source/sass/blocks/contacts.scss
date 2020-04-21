@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+
+  width: $mobile-width;
+
+  @include mobile-layout();
+  margin-bottom: 25px;
+}
+
+.contacts_block {
+  width: 49%;
+  min-height: 60px;
+  margin-top: 0;
+}
+
+.contacts__inviting {
+  color: $header-color;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+}

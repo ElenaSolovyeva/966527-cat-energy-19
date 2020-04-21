@@ -1,11 +1,54 @@
 .results {
-  position: relative;
-  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.results__name {
+.results__item {
+  position: relative;
+  display: block;
+  flex-direction: column;
+
+  width: 125px;
+  min-height: 55px;
+}
+
+.results-value {
+  display: block;
+  order: 1;
+  width: 100%;
+  min-height: 55px;
+  padding-top: 15px;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  border: 1px solid $results-border-color;
+  border-radius: 3px;
+}
+
+.results__parameter {
   position: absolute;
   z-index: 2;
-  bottom: 0;
-  left: center;
+  top: 45px;
+  left: 15%;
+  display: block;
+
+  width: 70%; //88px
+  min-height: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: $fill-leight;
+  border: 1px solid gold;
 }

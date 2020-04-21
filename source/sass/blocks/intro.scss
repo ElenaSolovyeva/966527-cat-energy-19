@@ -1,7 +1,7 @@
 
 .intro {
   position: relative;
-  max-width: $tablet-width;
+  width: $mobile-width;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -9,8 +9,8 @@
 
 .intro__article {
   min-height: 266px;
-  margin-right: $mobile-indent;
-  margin-left: $mobile-indent;
+  padding-right: $mobile-indent;
+  padding-left: $mobile-indent;
   background-color: $fill-leight;
 
   &:not(:last-child) {
@@ -22,7 +22,8 @@
   position: relative;
 
   padding-top: 40px;
-  padding-left: 90px;
+  padding-left: 70px;
+  margin-top: 0;
   margin-bottom: 35px;
 
   color: $header-color;
@@ -33,7 +34,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 22px;
+    left: 2px;
     top: 25px;
 
     width: 50px;
@@ -52,7 +53,7 @@
     content: "";
     z-index: 2;
     position: absolute;
-    left: 30px;
+    left: 10px;
     top: 22px;
 
     width: 35px;
@@ -70,7 +71,7 @@
     content: "";
     z-index: 2;
     position: absolute;
-    left: 13px;
+    left: -7px;
     top: 39px;
 
     width: 67px;
@@ -82,13 +83,12 @@
 }
 
 .intro__description {
-  padding-left: $mobile-indent;
-  padding-right: 35px;
+  padding-right: 45px;
   margin-bottom: 25px;
 
   color: $text-color;
   font-family: "Arial", sans-serif;
-  font-size: 14px;;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -98,8 +98,6 @@
 
   padding-top: 20px;
   padding-bottom: 22px;
-  margin-left: $mobile-indent;
-  margin-right: $mobile-indent;
 
   color: $header-color;
   font-size: 16px;

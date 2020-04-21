@@ -1,24 +1,47 @@
 .example {
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: $fill-leight;
+}
+
+.example-wrapper {
   position: relative;
 
-  margin: 0 auto 0 auto;
+  width: $mobile-width;
+  margin: 0 auto 25px auto;
   padding-left: $mobile-indent;
   padding-right: $mobile-indent;
 
-  background-color: $fill-leight;
   border: 1px solid tomato;
 }
 
 .example__title {
+  padding-top: 20px;
+  margin-top: 0;
   margin-bottom: 20px;
   color: $header-color;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
 }
 
 .example__text {
+  margin-top: 0;
+  margin-bottom: 25px;
   color: $text-color;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+}
+
+.example__costs {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
 }

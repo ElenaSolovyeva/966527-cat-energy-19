@@ -44,6 +44,10 @@ img {
   height: auto;
 }
 
+.main-block {
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -69,9 +73,15 @@ img {
 
 @import "../sass/blocks/burger-button.scss";
 @import "../sass/blocks/button.scss";
+@import "../sass/blocks/comparation.scss";
+@import "../sass/blocks/contacts.scss";
 @import "../sass/blocks/description.scss";
 @import "../sass/blocks/example.scss";
+@import "../sass/blocks/footer.scss";
 @import "../sass/blocks/intro.scss";
 @import "../sass/blocks/main-header.scss";
+@import "../sass/blocks/map.scss";
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/results.scss";
+@import "../sass/blocks/slider.scss";
+@import "../sass/blocks/social.scss";

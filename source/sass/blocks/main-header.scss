@@ -1,7 +1,7 @@
 .main-header {
   position: relative;
 
-  max-width: $tablet-width;// $mobile-width;
+  width: 100%; // $mobile-width;
   min-height: 480px;
   margin: 0 auto 20px auto;
 }
@@ -27,6 +27,7 @@
   z-index: 2;
 
   padding-top: 30px;
+  margin-top: 0;
   margin-bottom: 20px;
   width: $mobile-width;
   min-height: 36px;
@@ -50,7 +51,7 @@
     background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
-    }
+  }
 }
 
 .main-header__slogan {

@@ -1,0 +1,65 @@
+.footer {
+  width: 100%;
+  background-color: $fill-leight;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: $mobile-width;
+  min-height: 236px;
+  margin: 0 auto;
+
+  border: 1px solid tomato;
+}
+
+.footer__logo-wrapper {
+  position: relative;
+  min-height: 95px;
+  padding-top: 40px;
+  margin-left: $mobile-indent;
+  margin-right: $mobile-indent;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.footer__logo {
+  position: relative;
+  z-index: 2;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+
+  background-image: url("../img/logo-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 128px 24px;
+}
+
+.footer__developer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 79px;
+  margin-right: $mobile-indent;
+  margin-left: $mobile-indent;
+}
+
+.footer__developer-name {
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.footer__developer-logo {
+  width: 28px;
+  height: 34px;
+
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

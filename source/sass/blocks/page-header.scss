@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 768px;
-
-
+  width: $mobile-width;
   margin: 0 auto;
 }
 
