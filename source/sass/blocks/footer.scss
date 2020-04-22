@@ -6,6 +6,7 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   width: $mobile-width;
   min-height: 236px;
