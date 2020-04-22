@@ -3,23 +3,20 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  width: $mobile-width;
+  width: 100%;
   margin: 0 auto;
 }
 
 .page-header__wrapper {
-  order: 2;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width:100%;
+  width: 100%; //$mobile-width;
   min-height: 68px;
   padding-top: 10px;
 
   @include mobile-layout;
-  border: 1px solid $fill-leight;
 }
 
 .page-header__title {
