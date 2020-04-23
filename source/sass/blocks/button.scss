@@ -2,10 +2,9 @@
   position: relative;
   display: block;
 
-  width: $mobile-width; // 280 x 40
+  width: 280px;
   height: 40px;
 
-  @include mobile-layout();
   padding-top: 10px;
   margin: 0 auto;
 

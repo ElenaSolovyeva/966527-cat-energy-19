@@ -1,0 +1,12 @@
+.title-h1 {
+  width: $mobile-width;
+  min-height: 105px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: $mobile-indent;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  color: $header-color;
+  font-size: 36px;
+  line-height: 36px;
+}

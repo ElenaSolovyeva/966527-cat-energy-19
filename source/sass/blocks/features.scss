@@ -1,0 +1,15 @@
+.features {
+  display: flex;
+}
+
+.features__list {
+  width: 50%;
+  margin: 0;
+}
+
+.features__item {
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}

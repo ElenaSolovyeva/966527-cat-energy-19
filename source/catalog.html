@@ -3,84 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <header class="header">
-      <div class="header__wrapper">
-        <img class="header__logo" src="" width="33" height="38" alt="Логотип cat energy">
-        <div class="header__title"><span>CAT</span> ENERGY</div>
-
-        <button class="menu__button burger-button" aria-label="Меню"></button>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <!-- img class="page-header__logo" src="" width="33" height="38" alt="Логотип cat energy" -->
+        <div class="page-header__title"></div>
+        <button class="page-header__button burger-button" aria-label="Меню"></button>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Гавная</a> <!--?-->
+
+      <nav class="main-nav">
+        <ul class="main-nav__list reset-list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a> <!--?-->
           </li>
-          <li>
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li>
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="main-header-title title-h1">Каталог продукции</h1>
+      <h1 class="title-h1">Каталог продукции</h1>
 
-      <section class="catalog">
+      <section> <!--  class="catalog"-->
+        <h2 class="visually-hidden">Список товаров</h2>
+
         <article class="product">
-
-
-          <div class="product__info">
+          <div class="product__wrapper">
 
             <a href="" class="product__link"> <!-- картинка -->
-              <picture class="product__image"></picture>
+              <picture class="product__image product__image--small product__image--chicken500"></picture>
             </a>
 
             <div class="product__description"> <!-- заголовок + описание -->
 
-              <a href=""> <!-- в т.ч. заголовок -->
-                <h2 class="product__name">
-
-                  <span>Cat Energy</span>
-                  <span>PRO 1000 г</span>
-                </h2>
+              <a class="product__link-title" href=""> <!-- в т.ч. заголовок -->
+                <h2 class="product__name">Cat Energy <span class="product__value">PRO 500 Г</span></h2>
               </a>
 
-
-              <table class="product__features"> <!-- в т.ч. описание (таблица) -->
-
-                <tr class="visually-hidden">
-                    <th class="visually-hidden">Характеристики</th>
-                    <th class="visually-hidden">Значения</th>
-                </tr>
-                <tr>
-
-                  <td class="product__text"></td>
-                  <td class="product__text"></td>
-                </tr>
-                <tr>
-                  <td class="product__text"></td>
-                  <td class="product__text"></td>
-                </tr>
-                <tr>
-                  <td class="product__text"></td>
-                  <td class="product__text"></td>
-
-                </tr>
-              </table>
+              <div class="features"> <!-- в т.ч. описание (таблица) -->
+                <ul class="features__list reset-list">
+                  <li class="features__item">Объем</li>
+                  <li class="features__item">Вкус</li>
+                  <li class="features__item">Цена</li>
+                </ul>
+                <ul class="features__list reset-list">
+                  <li class="features__item">500 г</li>
+                  <li class="features__item">Курица</li>
+                  <li class="features__item">700 Р.</li>
+                </ul>
+              </div>
             </div> <!-- Конец таблицы class="product-description": заголовок + описание -->
 
-          </div> <!-- Конец каласса class="product-info": картинка + заголовок + описание -->
+          </div> <!-- Конец каласса class="product-wrapper": картинка + заголовок + описание -->
 
           <!-- Кнопка «Заказать» вызывает появление модального окна для оформления заказа. Модальное окно оформления заказа реализовывать не нужно.
           При отключенном JS должен осуществляться переход на страницу оформления заказа (страницу оформления заказа реализовывать не нужно). -->
-
           <a href="" class="product__order-button button">Заказать</a>
 
         </article>
@@ -135,16 +121,27 @@
 
 
     <footer class="footer">
-      <div class="footer__logo"></div>
+      <div class="footer__wrapper">
+        <div class="footer__logo-wrapper">
+          <div class="footer__logo"></div>
+        </div>
 
+        <div class="social">
+          <ul class="social__list reset-list">
+            <li class="social__item social__item--vk"></li>
+            <li class="social__item social__item--insta"></li>
+            <li class="social__item social__item--fb"></li>
+          </ul>
+        </div>
 
-      <div class="social"></div>
-
-      <div class="developer">
-        <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <div class="footer__developer">
+          <a class="footer__developer-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
       </div>
+
     </footer>
+
 
   </body>
 </html>
