@@ -27,7 +27,7 @@ body {
   min-width: $mobile-width;
   margin: 0;
   padding: 0;
-  background-color: grey;
+  //background-color: grey;
 
   @include text();
   background-repeat: no-repeat;
@@ -72,6 +72,7 @@ img {
   padding: 0;
 }
 
+@import "../sass/blocks/ad-product.scss";
 @import "../sass/blocks/additional-products.scss";
 @import "../sass/blocks/burger-button.scss";
 @import "../sass/blocks/button.scss";
