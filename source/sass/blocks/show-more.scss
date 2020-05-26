@@ -1,0 +1,52 @@
+.show-more {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.show-more__wrapper {
+  width: $mobile-width;
+  padding-right: $mobile-indent;
+  padding-left: $mobile-indent;
+  margin: 0 auto;
+}
+
+.show-more__title {
+  position: relative;
+  padding-top: 50px;
+  margin: 0 0 7px 0;
+
+  color: $header-color;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.show-more__text {
+  margin: 0 0 20px 0;
+
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.show-more__button {
+  margin-bottom: 25px;
+}

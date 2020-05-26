@@ -1,0 +1,120 @@
+.description {
+  position: relative;
+  width: $mobile-width;
+  padding-left: $mobile-indent;
+  padding-right: $mobile-indent;
+  margin-right: auto;
+  margin-bottom: 42px;
+  margin-left: auto;
+  border: 1px solid tomato;
+}
+
+.description__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $header-color;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.description__list {
+  margin-bottom: 0;
+}
+
+.decription__item {
+  position: relative;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-left: 80px;
+
+
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    background-color: $fill-color;
+    background-size: cover;
+  }
+}
+
+.decription__item--leaf {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-size: cover;
+  }
+}
+
+.decription__item--powder {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-size: cover;
+  }
+}
+
+.decription__item--dining {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-size: cover;
+  }
+}
+
+.decription__item--clock {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-size: cover;
+  }
+}

@@ -1,0 +1,44 @@
+.comparation {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 280px;
+  min-height: 232px;
+  margin: 0 auto 30px auto;
+}
+
+.comparation__image--before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+
+  width: 311px;
+  height: 232px;
+  margin: 0;
+  padding: 0;
+
+  // background-image: url("../img/before-mobile@1x.png");
+  // background-position: top left;
+  // background-size: 311px 232px;
+  // border: 1px solid tomato;
+}
+
+.comparation__image--after {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  display: none;
+
+  width: 251px; //311x232
+  height: 240px;
+  margin: 0;
+  padding: 0;
+
+  // background-image: url("../img/after-mobile@1x.png");
+  // background-position: top right;
+  // background-size: 251px 240px;
+  // border: 1px solid tomato;
+}

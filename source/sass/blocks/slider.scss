@@ -1,0 +1,54 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 220px;
+  min-height: 20px;
+}
+
+.slider-position {
+  margin: 0 auto 30px auto;
+}
+
+.slider__label {
+  width: 50px;
+  min-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $header-color;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+.slider__outline {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+
+  border: 1px solid $results-border-color;
+  border-radius: 6px;
+
+  background-color: $opposit-color;
+}
+
+.slider__scale {
+  position: relative;
+  z-index: 2;
+
+  width: 35px;
+  height: 6px;
+  margin-top: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  background-color: $fill-color;
+  border-radius: 4px;
+}

@@ -1,0 +1,35 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%; //$mobile-width;
+  min-height: 68px;
+  padding-top: 10px;
+
+  @include mobile-layout;
+}
+
+.page-header__title {
+  width: 190px;
+  height: 40px;
+  padding-top: 10px;
+
+
+  background-size: 190px 40px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__button {
+  margin-top: 14px;
+}
