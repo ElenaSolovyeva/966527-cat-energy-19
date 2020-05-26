@@ -21,9 +21,9 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("server", function () {
+gulp.task("server", function () { // вместо "server" нужен  "start"? ( "start": "gulp start")
   server.init({
-    server: "source/",
+    server: "source/", // Почему не "./source"?
     notify: false,
     open: true,
     cors: true,

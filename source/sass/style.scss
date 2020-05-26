@@ -27,6 +27,7 @@ body {
   min-width: $mobile-width;
   margin: 0;
   padding: 0;
+  background-color: grey;
 
   @include text();
   background-repeat: no-repeat;
@@ -71,8 +72,10 @@ img {
   padding: 0;
 }
 
+@import "../sass/blocks/additional-products.scss";
 @import "../sass/blocks/burger-button.scss";
 @import "../sass/blocks/button.scss";
+@import "../sass/blocks/catalog.scss";
 @import "../sass/blocks/comparation.scss";
 @import "../sass/blocks/contacts.scss";
 @import "../sass/blocks/description.scss";
@@ -86,6 +89,7 @@ img {
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/product.scss";
 @import "../sass/blocks/results.scss";
+@import "../sass/blocks/show-more.scss";
 @import "../sass/blocks/slider.scss";
 @import "../sass/blocks/social.scss";
 @import "../sass/blocks/title-h1.scss";

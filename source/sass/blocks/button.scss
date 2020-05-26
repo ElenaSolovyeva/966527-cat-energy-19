@@ -13,4 +13,9 @@
   text-transform: uppercase;
 
   background-color: $fill-color;
+
+  &--pale {
+    color: $text-color;
+    background-color: $fill-leight;
+  }
 }

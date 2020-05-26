@@ -1,0 +1,34 @@
+.additional-products {
+  position: relative;
+}
+
+.additional-products__wrapper {
+  width: $mobile-width;
+  padding-right: $mobile-indent;
+  padding-left: $mobile-indent;
+  margin: 0 auto;
+}
+
+.additional-products__title {
+  position: relative;
+  padding-top: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $header-color;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::before {
+    content: "---";
+    position: absolute;
+    top: 40px;
+    left: 107px;
+
+    width: 50vw;
+    height: 1px;
+
+    border-bottom: 3px solid $fill-color;
+  }
+}
