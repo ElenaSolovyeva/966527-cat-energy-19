@@ -1,12 +1,15 @@
 .description {
   position: relative;
-  width: $mobile-width;
+
   padding-left: $mobile-indent;
   padding-right: $mobile-indent;
   margin-right: auto;
   margin-bottom: 42px;
   margin-left: auto;
-  border: 1px solid tomato;
+
+  border: 1px solid red;
+
+  @include mobile-layout;
 }
 
 .description__title {

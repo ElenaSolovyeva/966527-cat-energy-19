@@ -8,6 +8,7 @@
   padding-right: $padding-right;
   margin-right: auto;
   margin-left: auto;
+  min-width: $mobile-width;
 }
 
 @mixin text($color: #444444, $font-size: 14px, $line-height: 18px) {

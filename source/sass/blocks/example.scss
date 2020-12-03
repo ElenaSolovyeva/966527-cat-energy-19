@@ -1,19 +1,21 @@
 .example {
-  width: 100%;
   margin: 0 auto;
 
   background-color: $fill-leight;
+  border: 1px solid red;
+
+  @include mobile-layout;
 }
 
 .example-wrapper {
   position: relative;
 
-  width: $mobile-width;
+  width: 100%; //$mobile-width;
   margin: 0 auto 25px auto;
   padding-left: $mobile-indent;
   padding-right: $mobile-indent;
 
-  border: 1px solid tomato;
+  border: 1px dashed gold;
 }
 
 .example__title {

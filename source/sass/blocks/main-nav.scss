@@ -1,6 +1,7 @@
-// .main-nav {
-//
-// }
+.main-nav {
+  width: 100%;
+  border: 1px dashed gold;
+}
 
 .main-nav__list {
   display: flex;
@@ -26,7 +27,7 @@
 .main-nav__link {
   display: block;
 
-  width: 280px;
+  width: $mobile-width;
   height: 67px;
   padding-top: 25px;
   margin: 0 auto;
